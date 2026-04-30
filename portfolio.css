@@ -1,0 +1,116 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f5f6fa;
+}
+
+header {
+  background: #222;
+  color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+nav ul li {
+  cursor: pointer;
+  padding: 20px 30px;
+  transition: background 0.2s;
+}
+nav ul li.active, nav ul li:hover {
+  background: #444;
+}
+
+main {
+  padding: 32px;
+}
+
+/* Gallery */
+.gallery {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.gallery img {
+  width: 120px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px #aaa2;
+}
+ul,ol {
+  margin: 10px 0 10px 30px;
+}
+
+.project-card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px #eee;
+  margin: 20px 0;
+  padding: 16px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.project-logo {
+  height: 60px;
+  width: 60px;
+  object-fit: contain;
+  border-radius: 8px;
+  background: #f5f6fa;
+  border: 1px solid #eee;
+}
+.project-desc {
+  flex: 1;
+}
+a {
+  color: #276ef1;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+label {
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+input, textarea {
+  width: 100%;
+  padding: 8px;
+  margin: 5px 0 15px 0;
+  font-size: 1rem;
+}
+button {
+  background: #222;
+  color: #fff;
+  padding: 10px 22px;
+  border-radius: 4px;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+}
+button:hover {
+  background: #444;
+}
+.error {
+  color: red;
+  font-size: 14px;
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
+.success {
+  color: green;
+  font-size: 16px;
+}
+@media (max-width:800px) {
+  .gallery { flex-direction: column; }
+  .project-card { flex-direction: column; align-items: flex-start; }
+}
