@@ -62,16 +62,16 @@ const projects = [
     logo: "https://picsum.photos/60?random=13",
     desc: "Personal professional website.",
     tech: ["HTML", "CSS", "JavaScript"],
-    github: "https://github.com/yourname/portfolio"
+    github: "https://github.com/Ragin-coder/portfolio"
   }
 ];
 
 const contact = {
   email: "Ntborders2s@semo.edu",
   phone: "", // Blank because not provided
-  github: "https://github.com/yourname",
+  github: "https://github.com/Ragin-coder",
   blog: "",
-  linkedIn: "https://linkedin.com/in/yourname"
+  linkedIn: "https://linkedin.com/in/Nboders"
 };
 
 // ====== DOM elements ======
